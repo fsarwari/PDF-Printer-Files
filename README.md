@@ -23,7 +23,7 @@ Make list.cgi executable `chmod +x list.cgi`
 Content:
 ```application/x-httpd-cgi cgi```
 
-# Modify config in /etc/cups/cups-pdf.conf
+### Modify config in /etc/cups/cups-pdf.conf
 ```
 AnonUMask 0022
 UserUMask 0022
@@ -32,4 +32,4 @@ AnonDirName /usr/share/cups/doc-root/PDF
 ```
 
 ### Delete older files older than one day
-1 1 * * * /usr/bin/find /usr/share/cups/doc-root/PDF -mtime +1 -exec rm {} \;
+`1 1 * * * /usr/bin/find /usr/share/cups/doc-root/PDF -mtime +1 -exec rm {} \;`
