@@ -34,6 +34,8 @@ UserUMask 0022
 Out /usr/share/cups/doc-root/PDF
 AnonDirName /usr/share/cups/doc-root/PDF
 ```
+### Create output folder
+`mkdir /usr/share/cups/doc-root/PDF`
 
 ### Delete older files older than one day
 `1 1 * * * /usr/bin/find /usr/share/cups/doc-root/PDF -mtime +1 -exec rm {} \;`
